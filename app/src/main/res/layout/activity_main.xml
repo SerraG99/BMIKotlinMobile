@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#fdfcF7"
+    >
+
+    <ImageView
+        android:id="@+id/im_title"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_your_weight"
+        android:textSize="26sp"
+        android:paddingStart="14dp"
+        tools:ignore="RtlSymmetry" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_width"
+        android:layout_margin="20dp"
+        android:autofillHints="63"
+        android:hint="@string/your_weight"
+        android:gravity="center"
+        android:padding="20dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_insert_your_height"
+        android:paddingStart="14dp"
+        android:textSize="26sp"
+        tools:ignore="RtlSymmetry" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_height"
+        android:layout_margin="20dp"
+        android:autofillHints="1.67"
+        android:hint="@string/your_height"
+        android:gravity="center"
+        android:padding="20dp"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/calculate_my_bmi" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/tw_result"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="..."
+        />
+
+    <ImageView
+        android:id="@+id/im_res"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
